@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Samarra Squad Dashboard</title>
+
+    <!-- START: ADD FAVICON HERE -->
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234a6987'/><stop offset='100%' stop-color='%237a9fca'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='white'/><g transform='translate(0 5)'><path d='M22,35 A 28,30 0 0,1 78,35' fill='url(%23g)'/><path d='M15,40 Q12,40 12,43 L12,62 Q12,65 15,65 L85,65 Q88,65 88,62 L88,43 Q88,40 85,40 Z' fill='%233d352e'/><circle cx='37' cy='52' r='10' fill='url(%23g)' stroke='white' stroke-width='3'/><path d='M41,46 A 6,6 0 0,0 35,50' fill-opacity='0.3' fill='white'/><circle cx='63' cy='52' r='10' fill='url(%23g)' stroke='white' stroke-width='3'/><path d='M67,46 A 6,6 0 0,0 61,50' fill-opacity='0.3' fill='white'/><path d='M45,68 C48,72 52,72 55,68' stroke='url(%23g)' stroke-width='3' fill='none' stroke-linecap='round'/></g></svg>">
+    <!-- END: ADD FAVICON HERE -->
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Added Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="main-header">
+        <!-- ACCURATE ROBOT LOGO -->
+        <svg class="squad-logo" viewBox="0 0 100 92" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#3b82f6;"/>
+                    <stop offset="100%" style="stop-color:#1e3a8a;"/>
+                </linearGradient>
+            </defs>
+            <g>
+                <path d="M 32,77.5 C 32,70 28,68 25,68 C 22,68 18,70 18,77.5 L 20,87 L 30,87 Z"
+                      fill="url(#logoGradient)" stroke="#e5e0d7" stroke-width="0.5"/>
+                <path d="M 68,77.5 C 68,70 72,68 75,68 C 78,68 82,70 82,77.5 L 80,87 L 70,87 Z"
+                      fill="url(#logoGradient)" stroke="#e5e0d7" stroke-width="0.5"/>
+                <path d="M 22,35 A 28,30 0 0,1 78,35" fill="url(#logoGradient)" stroke="#e5e0d7"
+                      stroke-width="0.5"/>
+                <path d="M 12,38 Q 10,38 10,40 L 10,58 Q 10,60 12,60 L 88,60 Q 90,60 90,58 L 90,40 Q 90,38 88,38 Z"
+                      fill="#e4e9ed"/>
+                <path d="M 14,39 Q 12,39 12,41 L 12,57 Q 12,59 14,59 L 86,59 Q 88,59 88,57 L 88,41 Q 88,39 86,39 Z"
+                      fill="#3d352e"/>
+                <path d="M 16,40 Q 14,40 14,42 L 14,56 Q 14,58 16,58 L 84,58 Q 86,58 86,56 L 86,42 Q 86,40 84,40 Z"
+                      fill="#8a7d72"/>
+                <g>
+                    <circle cx="9" cy="48" r="6" fill="url(#logoGradient)" stroke="#e5e0d7"
+                            stroke-width="0.5"/>
+                    <circle cx="9" cy="48" r="4.5" fill="url(#logoGradient)" fill-opacity="0.5"/>
+                    <circle cx="9" cy="48" r="3" fill="#1e1a17"/>
+                </g>
+                <g>
+                    <circle cx="91" cy="48" r="6" fill="url(#logoGradient)" stroke="#e5e0d7"
+                            stroke-width="0.5"/>
+                    <circle cx="91" cy="48" r="4.5" fill="url(#logoGradient)" fill-opacity="0.5"/>
+                    <circle cx="91" cy="48" r="3" fill="#1e1a17"/>
+                </g>
+                <g>
+                    <circle cx="37" cy="49" r="8" fill="url(#logoGradient)" stroke="#FFFFFF"
+                            stroke-width="1.5"/>
+                    <path d="M 40,44 A 5,5 0 0,0 34,48" fill="#FFFFFF" fill-opacity="0.3"/>
+                </g>
+                <g>
+                    <circle cx="63" cy="49" r="8" fill="url(#logoGradient)" stroke="#FFFFFF"
+                            stroke-width="1.5"/>
+                    <path d="M 66,44 A 5,5 0 0,0 60,48" fill="#FFFFFF" fill-opacity="0.3"/>
+                </g>
+                <path d="M 45,64 C 48,67 52,67 55,64" stroke="url(#logoGradient)" stroke-width="2.5"
+                      fill="none" stroke-linecap="round"/>
+            </g>
+        </svg>
+        <div class="header-container">
+            <div class="lang-switcher hidden">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+            <h1 class="text-4xl font-extrabold text-center">
+                <span class="bg-gradient-to-r from-slate-700 to-blue-800 text-transparent bg-clip-text">Samarra Squad Dashboard </span>
+            </h1>
+            <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle theme">
+                <svg id="theme-icon-sun" class="hidden" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <svg id="theme-icon-moon" class="hidden" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="tabs-container">
+        <button class="tab-button hidden" data-tab="projects">Projects</button>
+        <button class="tab-button active" data-tab="metrics">Metrics</button>
+        <button class="tab-button" data-tab="analytics">Analytics</button>
+        <button class="tab-button hidden" data-tab="ratings" >Ratings</button>
+        <button class="tab-button hidden" data-tab="kudos">Kudos</button>
+        <button class="tab-button" data-tab="members">Members</button>
+        <button class="tab-button hidden" data-tab="feedback">Feedbacks</button>
+    </div>
+    <div id="status-area">
+        <div class="loading-container" id="loading-indicator">
+            <div class="spinner"></div>
+            <p class="text-secondary">Loading dashboard data...</p>
+        </div>
+    </div>
+    <div id="content-area" class="hidden">
+        <div id="projects-content" class="tab-content markdown-body hidden">
+            <!-- This content will be generated by script.js -->
+        </div>
+        <div id="metrics-content" class="tab-content">
+            <div class="pr-controls hidden">
+                <div class="filter-controls-left">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-status="all">All</button>
+                        <button class="filter-btn" data-status="merged">Merged</button>
+                        <button class="filter-btn" data-status="pending">Pending</button>
+                        <button class="filter-btn" data-status="closed">Closed</button>
+                    </div>
+                    <select id="author-filter" class="control-input">
+                        <option value="all">All Authors</option>
+                    </select>
+                    <select id="assignee-filter" class="control-input">
+                        <option value="all">All Assignees</option>
+                    </select>
+                </div>
+                <input type="text" id="pr-search" class="control-input"
+                       placeholder="Search by title or PR number...">
+            </div>
+            <div id="pr-metrics-container"></div>
+        </div>
+        <div id="analytics-content" class="tab-content hidden space-y-8">
+            <div class="analytics-filter-bar">
+                <label for="analytics-week-filter" class="font-semibold">Filter by Week:</label>
+                <select id="analytics-week-filter" class="control-input"></select>
+                <label for="analytics-developer-filter" class="font-semibold">View as:</label>
+                <select id="analytics-developer-filter" class="control-input"></select>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-slate-600">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="18" r="3"></circle>
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                            <line x1="6" y1="9" x2="6" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-total-prs" class="kpi-value">-</div>
+                        <div class="kpi-label">Total PRs</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-emerald-600">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="18" r="3"></circle>
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <path d="M6 21V9a9 9 0 0 0 9 9"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-total-merged" class="kpi-value">-</div>
+                        <div class="kpi-label">Merged PRs</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-rose-700">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41L8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-total-closed" class="kpi-value">-</div>
+                        <div class="kpi-label">Total Closed PRs</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-sky-700">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,6L17,11H7L12,6M7,13H17V15H7V13M7,17H17V19H7V17Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-avg-pr-size" class="kpi-value">-</div>
+                        <div class="kpi-label">Avg. PR Size</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-cyan-700">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18,14H19V15H18V14M18,11H21V12H18V11M18,8H21V9H18V8M5,14H6V15H5V14M5,11H8V12H5V11M5,8H8V9H5V8M12,4C7.58,4 4,7.58 4,12C4,16.42 7.58,20 12,20C16.42,20 20,16.42 20,12C20,7.58 16.42,4 12,4Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-total-comments" class="kpi-value">-</div>
+                        <div class="kpi-label">Total Comments</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-sky-600">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10M6,7H18V9H6V7M6,11H15V13H6V11Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-avg-comments" class="kpi-value">-</div>
+                        <div class="kpi-label">Avg. Comments / PR</div>
+                    </div>
+                </div>
+            </div>
+            <div id="merge-process-health-container" class="panel"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-teal-600">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-avg-approval-time" class="kpi-value">-</div>
+                        <div class="kpi-label">Avg. Time to 1st Approval</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon bg-green-600">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="kpi-avg-lifespan" class="kpi-value">-</div>
+                        <div class="kpi-label">Avg. PR Lifespan</div>
+                    </div>
+                </div>
+                <div id="hot-streak-card" class="kpi-card spotlight-card"></div>
+                <div id="fastest-reviewer-card" class="kpi-card spotlight-card"></div>
+                <div id="top-commenter-card" class="kpi-card spotlight-card"></div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-header panel-title">Daily Activity Breakdown</h3>
+                <div class="panel-body" id="daily-breakdown-container">
+                    <!-- Interactive daily breakdown will be rendered here -->
+                </div>
+            </div>
+            <div id="pr-type-trends-container" class="panel"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="panel">
+                    <h3 class="panel-header panel-title">Contribution Leaderboard</h3>
+                    <div class="panel-body chart-container">
+                        <canvas id="contributionsChart"></canvas>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h3 class="panel-header panel-title">Review Load Distribution</h3>
+                    <div class="panel-body chart-container">
+                        <canvas id="reviewersChart"></canvas>
+                    </div>
+                </div>
+                <div class="panel lg:col-span-2">
+                    <h3 class="panel-header panel-title">Top Collaboration Pairs</h3>
+                    <div class="panel-body">
+                        <ul id="collaboration-list" class="collaboration-list"></ul>
+                    </div>
+                </div>
+                <div class="panel lg:col-span-2">
+                    <h3 class="panel-header panel-title">Most Discussed PRs</h3>
+                    <div class="panel-body">
+                        <ul id="most-discussed-prs-list" class="discussed-prs-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ratings-content" class="tab-content hidden">
+            <!-- This content will be generated by script.js -->
+        </div>
+        <div id="kudos-content" class="tab-content hidden">
+            <!-- This content will be generated by script.js -->
+        </div>
+        <div id="members-content" class="tab-content hidden">
+            <div class="zoom-controls">
+                <button id="zoom-in" aria-label="Zoom In">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button id="zoom-out" aria-label="Zoom Out">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path fill-rule="evenodd" d="M3.75 12a.75.75 0 01.75-.75h15a.75.75 0 010 1.5h-15a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button id="zoom-reset" aria-label="Reset Zoom">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M11.99 2.5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zm0 18a8.5 8.5 0 110-17 8.5 8.5 0 010 17z"/>
+                        <path d="M12 12.75a.75.75 0 00.75-.75v-4a.75.75 0 00-1.5 0v4c0 .414.336.75.75.75z"/>
+                        <path d="M12.75 12a.75.75 0 00-.75-.75h-4a.75.75 0 000 1.5h4c.414 0 .75-.336.75-.75z"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="org-chart-render-target">
+                <!-- The organizational chart will be rendered here by script.js -->
+            </div>
+        </div>
+        <div id="feedback-content" class="tab-content hidden" dir="rtl">
+            <!-- This content will be generated by script.js -->
+        </div>
+    </div>
+</div>
+<!-- Local Script -->
+<script src="script.js"></script>
+</body>
+</html>
