@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/notched_shape"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="@string/card_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/notched_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="328:108"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="56dp"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_linear_gradiant"
+        android:rotation="180"
+        android:translationX="5dp"
+        app:layout_constraintEnd_toStartOf="@id/heptagon_shape"
+        app:layout_constraintTop_toTopOf="@id/notched_shape" />
+
+    <View
+        android:layout_width="56dp"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_linear_gradiant"
+        android:translationX="-5dp"
+        app:layout_constraintStart_toEndOf="@id/heptagon_shape"
+        app:layout_constraintTop_toTopOf="@id/notched_shape" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/heptagon_shape"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="91dp"
+        android:backgroundTint="@color/transparent"
+        android:foreground="@drawable/heptagon_shape"
+        android:outlineSpotShadowColor="#49BAF2"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_title"
+        app:layout_constraintDimensionRatio="145:40"
+        app:layout_constraintEnd_toEndOf="@id/notched_shape"
+        app:layout_constraintStart_toStartOf="@id/notched_shape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/Label.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textColor="@color/on_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/heptagon_shape"
+        app:layout_constraintEnd_toEndOf="@id/heptagon_shape"
+        app:layout_constraintStart_toStartOf="@id/heptagon_shape"
+        app:layout_constraintTop_toTopOf="@id/heptagon_shape"
+        tools:text="03-08-2025" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Body.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/on_primary"
+        app:layout_constraintBottom_toTopOf="@id/coins_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heptagon_shape"
+        tools:text="Science &amp; Natural" />
+
+    <LinearLayout
+        android:id="@+id/coins_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divider_1"
+        app:layout_constraintStart_toStartOf="@id/notched_shape"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintVertical_bias="0">
+
+        <FrameLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/transparent"
+                android:outlineSpotShadowColor="#DC6A43"
+                app:cardCornerRadius="50dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/coin_stack"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coin_stack" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_coins_value"
+            style="@style/Label.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            tools:text="-304" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="8.75dp"
+        android:background="@drawable/divider_background"
+        app:layout_constraintBottom_toBottomOf="@id/coins_layout"
+        app:layout_constraintEnd_toStartOf="@id/star_layout"
+        app:layout_constraintStart_toEndOf="@id/coins_layout"
+        app:layout_constraintTop_toTopOf="@id/coins_layout" />
+
+    <LinearLayout
+        android:id="@+id/star_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="@id/coins_layout"
+        app:layout_constraintEnd_toStartOf="@id/divider_2"
+        app:layout_constraintStart_toEndOf="@id/divider_1"
+        app:layout_constraintTop_toTopOf="@id/coins_layout"
+        app:layout_constraintVertical_bias="0">
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/transparent"
+                android:outlineSpotShadowColor="#49BAF2"
+                app:cardCornerRadius="50dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/star"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blue_star" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_star_value"
+            style="@style/Label.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shade_primary"
+            tools:text="0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="8.75dp"
+        android:background="@drawable/divider_background"
+        app:layout_constraintBottom_toBottomOf="@id/star_layout"
+        app:layout_constraintEnd_toStartOf="@id/time_layout"
+        app:layout_constraintStart_toEndOf="@id/star_layout"
+        app:layout_constraintTop_toTopOf="@id/star_layout" />
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="@id/star_layout"
+        app:layout_constraintEnd_toEndOf="@id/notched_shape"
+        app:layout_constraintStart_toEndOf="@id/divider_2"
+        app:layout_constraintTop_toTopOf="@id/star_layout"
+        app:layout_constraintVertical_bias="0">
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/transparent"
+                android:outlineSpotShadowColor="#49BAF2"
+                app:cardCornerRadius="50dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/clock"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clock" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_time_value"
+            style="@style/Label.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/shade_primary"
+            tools:text="1m 33sec" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
