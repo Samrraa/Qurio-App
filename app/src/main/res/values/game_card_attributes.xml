@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GameCardView">
+        <attr name="cardTitle" format="string" />
+        <attr name="cardImage" format="reference" />
+        <attr name="borderColor" format="color" />
+        <attr name="buttonText" format="string" />
+        <attr name="buttonHeight" format="dimension" />
+    </declare-styleable>
+</resources>
