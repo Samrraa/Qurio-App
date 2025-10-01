@@ -145,8 +145,8 @@
           "url": "https://github.com/marwanqashwa"
         },
         "first_comment_at": "2025-10-01T14:14:04Z",
-        "last_comment_at": "2025-10-01T15:03:39Z",
-        "count": 2
+        "last_comment_at": "2025-10-01T15:19:33Z",
+        "count": 3
       }
     ],
     "approvals": [],
@@ -161,7 +161,7 @@
     "week": "2025-W40",
     "status": "pending",
     "diff_stats": {
-      "additions": 307,
+      "additions": 285,
       "deletions": 0,
       "changed_files": 7
     }
