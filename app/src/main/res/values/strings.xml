@@ -4,4 +4,8 @@
     <string name="setting_icon">setting icon</string>
     <string name="welcome_qurio_explorer">Welcome Qurio explorer</string>
     <string name="character_image">character image</string>
+    <string name="card_background">card background</string>
+    <string name="coin_stack">coin stack</string>
+    <string name="star">star</string>
+    <string name="clock">clock</string>
 </resources>
