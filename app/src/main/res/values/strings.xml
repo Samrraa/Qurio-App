@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QurioApp</string>
+    <string name="card_background">card background</string>
+    <string name="coin_stack">coin stack</string>
+    <string name="star">star</string>
+    <string name="clock">clock</string>
 </resources>
