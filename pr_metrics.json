@@ -185,7 +185,18 @@
         "url": "https://github.com/BassantM"
       }
     ],
-    "comments": [],
+    "comments": [
+      {
+        "author": {
+          "login": "BassantM",
+          "id": 102248144,
+          "url": "https://github.com/BassantM"
+        },
+        "first_comment_at": "2025-10-01T15:43:59Z",
+        "last_comment_at": "2025-10-01T15:43:59Z",
+        "count": 1
+      }
+    ],
     "approvals": [],
     "required_approvals": 2,
     "first_approved_at": null,
