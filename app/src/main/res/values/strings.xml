@@ -3,4 +3,8 @@
     <string name="keep_it_up">KEEP IT UP!</string>
     <string name="fire_image">fire_image</string>
     <string name="day_fire">day fire</string>
+    <string name="card_background">card background</string>
+    <string name="coin_stack">coin stack</string>
+    <string name="star">star</string>
+    <string name="clock">clock</string>
 </resources>
