@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QurioApp</string>
+    <string name="character_image">Character Image</string>
+    <string name="rika">Rika</string>
+    <string name="check_icon">Check Icon</string>
+    <string name="lock_icon">lock icon</string>
+    <string name="coins_icon">coins icon</string>
+    <string name="_30k">30k</string>
 </resources>
