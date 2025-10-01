@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QurioApp</string>
+    <string name="back_arrow_icon">back arrow icon</string>
+    <string name="setting_icon">setting icon</string>
+    <string name="welcome_qurio_explorer">Welcome Qurio explorer</string>
+    <string name="character_image">character image</string>
 </resources>
