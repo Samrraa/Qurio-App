@@ -1,1 +1,116 @@
-[]
+[
+  {
+    "pr_number": 1,
+    "url": "https://github.com/Samrraa/QurioApp/pull/1",
+    "title": "Add last game card UI and assets",
+    "opened_at": "2025-09-30T11:28:46Z",
+    "head_ref": "component/last-game",
+    "base_ref": "develop",
+    "creator": {
+      "login": "mohannadahmed00",
+      "id": 43306572,
+      "url": "https://github.com/mohannadahmed00"
+    },
+    "assignees": [
+      {
+        "login": "mohannadahmed00",
+        "id": 43306572,
+        "url": "https://github.com/mohannadahmed00"
+      }
+    ],
+    "comments": [
+      {
+        "author": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "first_comment_at": "2025-09-30T16:54:53Z",
+        "last_comment_at": "2025-09-30T16:57:27Z",
+        "count": 2
+      },
+      {
+        "author": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "first_comment_at": "2025-09-30T15:28:56Z",
+        "last_comment_at": "2025-09-30T15:30:10Z",
+        "count": 2
+      }
+    ],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "BassantM",
+          "id": 102248144,
+          "url": "https://github.com/BassantM"
+        },
+        "submitted_at": "2025-09-30T17:01:37Z",
+        "commit_id": "3aecb7496a4cbd0e69698fed8f6b565d4d1b4d33"
+      },
+      {
+        "reviewer": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "submitted_at": "2025-10-01T07:24:05Z",
+        "commit_id": "3aecb7496a4cbd0e69698fed8f6b565d4d1b4d33"
+      }
+    ],
+    "required_approvals": 2,
+    "first_approved_at": "2025-09-30T17:01:37Z",
+    "time_to_first_approval_minutes": 332.85,
+    "required_approvals_met_at": "2025-10-01T07:24:05Z",
+    "time_to_required_approvals_minutes": 1195.3166666666666,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "approved",
+    "diff_stats": {
+      "additions": 789,
+      "deletions": 0,
+      "changed_files": 17
+    }
+  },
+  {
+    "pr_number": 2,
+    "url": "https://github.com/Samrraa/QurioApp/pull/2",
+    "title": "feat:add game card layout and background view",
+    "opened_at": "2025-10-01T00:50:26Z",
+    "head_ref": "feature/game-card",
+    "base_ref": "develop",
+    "creator": {
+      "login": "marwanqashwa",
+      "id": 100484790,
+      "url": "https://github.com/marwanqashwa"
+    },
+    "assignees": [
+      {
+        "login": "marwanqashwa",
+        "id": 100484790,
+        "url": "https://github.com/marwanqashwa"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 307,
+      "deletions": 0,
+      "changed_files": 7
+    }
+  }
+]
