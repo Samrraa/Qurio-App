@@ -24,9 +24,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/fredoka"
+        android:fontFamily="@font/fredoka_medium"
         android:textColor="@color/shade_primary"
-        android:textSize="16sp"
+        app:layout_goneMarginStart="16dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/fireIcon"
@@ -39,13 +40,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/fredoka"
+        android:fontFamily="@font/fredoka_regular"
         android:text="@string/keep_it_up"
         android:textColor="@color/shade_secondary"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@id/streakTitle"
         app:layout_constraintStart_toStartOf="@id/streakTitle"
-        app:layout_constraintTop_toBottomOf="@id/streakTitle" />
+        app:layout_constraintTop_toBottomOf="@id/streakTitle"
+        tools:ignore="SmallSp" />
 
     <LinearLayout
         android:id="@+id/dayRow"
@@ -53,11 +55,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:baselineAligned="false"
+        android:layout_marginEnd="28dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="7"
-        app:layout_constraintEnd_toEndOf="@+id/streakSubtitle"
-        app:layout_constraintStart_toEndOf="@+id/fireIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/streakSubtitle"
         app:layout_constraintTop_toBottomOf="@+id/streakSubtitle">
 
         <include
