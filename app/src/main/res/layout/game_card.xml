@@ -39,25 +39,3 @@
         app:layout_constraintStart_toStartOf="@+id/gameCardBackgroundView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <!--sample of game card tow uses-->
-
-    <!--<com.samrraa.qurioapp.gamecard.GameCardView-->
-    <!--android:layout_width="274dp"-->
-    <!--android:layout_height="344dp"-->
-    <!--app:buttonHeight="48dp"-->
-    <!--app:buttonText="Play Now"-->
-    <!--app:cardImage="@drawable/img_plant"-->
-    <!--app:cardTitle="Sample Game"-->
-    <!--android:layout_marginBottom="60dp"-->
-    <!--app:borderColor="@android:color/holo_blue_light" />-->
-
-    <!--<com.samrraa.qurioapp.gamecard.GameCardView-->
-    <!--android:layout_width="156dp"-->
-    <!--android:layout_height="255dp"-->
-    <!--app:buttonHeight="48dp"-->
-    <!--app:buttonText="Play Now"-->
-    <!--app:cardImage="@drawable/img_plant"-->
-    <!--app:cardTitle="Geography"-->
-    <!--app:borderColor="@android:color/holo_blue_light" />-->
