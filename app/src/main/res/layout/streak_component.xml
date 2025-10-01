@@ -8,8 +8,6 @@
     android:background="@drawable/streak_background"
     android:padding="16dp">
 
-
-    <!-- Fire Icon -->
     <ImageView
         android:id="@+id/fireIcon"
         android:layout_width="48dp"
@@ -26,7 +24,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textColor="@android:color/white"
+        android:fontFamily="@font/fredoka"
+        android:textColor="@color/shade_primary"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +39,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/fredoka"
         android:text="@string/keep_it_up"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/shade_secondary"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@id/streakTitle"
         app:layout_constraintStart_toStartOf="@id/streakTitle"
