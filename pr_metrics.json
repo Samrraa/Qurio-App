@@ -132,5 +132,42 @@
       "deletions": 0,
       "changed_files": 7
     }
+  },
+  {
+    "pr_number": 3,
+    "url": "https://github.com/Samrraa/QurioApp/pull/3",
+    "title": "component/top-bar",
+    "opened_at": "2025-10-01T13:34:51Z",
+    "head_ref": "component/top-bar",
+    "base_ref": "develop",
+    "creator": {
+      "login": "BassantM",
+      "id": 102248144,
+      "url": "https://github.com/BassantM"
+    },
+    "assignees": [
+      {
+        "login": "BassantM",
+        "id": 102248144,
+        "url": "https://github.com/BassantM"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 162,
+      "deletions": 0,
+      "changed_files": 16
+    }
   }
 ]
