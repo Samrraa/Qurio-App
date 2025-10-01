@@ -126,6 +126,16 @@
       },
       {
         "author": {
+          "login": "Hasa9nAli",
+          "id": 92353024,
+          "url": "https://github.com/Hasa9nAli"
+        },
+        "first_comment_at": "2025-10-01T14:40:29Z",
+        "last_comment_at": "2025-10-01T14:42:07Z",
+        "count": 2
+      },
+      {
+        "author": {
           "login": "marwanqashwa",
           "id": 100484790,
           "url": "https://github.com/marwanqashwa"
@@ -135,10 +145,20 @@
         "count": 1
       }
     ],
-    "approvals": [],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "Hasa9nAli",
+          "id": 92353024,
+          "url": "https://github.com/Hasa9nAli"
+        },
+        "submitted_at": "2025-10-01T14:43:19Z",
+        "commit_id": "70524666215098fc6a3a788f8d95461f28de3b36"
+      }
+    ],
     "required_approvals": 2,
-    "first_approved_at": null,
-    "time_to_first_approval_minutes": null,
+    "first_approved_at": "2025-10-01T14:43:19Z",
+    "time_to_first_approval_minutes": 832.8833333333333,
     "required_approvals_met_at": null,
     "time_to_required_approvals_minutes": null,
     "closed_at": null,
