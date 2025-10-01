@@ -6,4 +6,8 @@
     <string name="lock_icon">lock icon</string>
     <string name="coins_icon">coins icon</string>
     <string name="_30k">30k</string>
+    <string name="card_background">card background</string>
+    <string name="coin_stack">coin stack</string>
+    <string name="star">star</string>
+    <string name="clock">clock</string>
 </resources>
