@@ -276,7 +276,18 @@
         "url": "https://github.com/mohannadahmed00"
       }
     ],
-    "comments": [],
+    "comments": [
+      {
+        "author": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "first_comment_at": "2025-10-02T22:36:03Z",
+        "last_comment_at": "2025-10-02T22:36:03Z",
+        "count": 1
+      }
+    ],
     "approvals": [
       {
         "reviewer": {
@@ -286,18 +297,27 @@
         },
         "submitted_at": "2025-10-02T16:33:04Z",
         "commit_id": "451f625e1f021bbef892c1b24bbf2f0d6967967f"
+      },
+      {
+        "reviewer": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "submitted_at": "2025-10-02T22:43:42Z",
+        "commit_id": "451f625e1f021bbef892c1b24bbf2f0d6967967f"
       }
     ],
     "required_approvals": 2,
     "first_approved_at": "2025-10-02T16:33:04Z",
     "time_to_first_approval_minutes": 1168.4833333333333,
-    "required_approvals_met_at": null,
-    "time_to_required_approvals_minutes": null,
+    "required_approvals_met_at": "2025-10-02T22:43:42Z",
+    "time_to_required_approvals_minutes": 1539.1166666666666,
     "closed_at": null,
     "merged_at": null,
     "merged_by": null,
     "week": "2025-W40",
-    "status": "pending",
+    "status": "approved",
     "diff_stats": {
       "additions": 381,
       "deletions": 49,
