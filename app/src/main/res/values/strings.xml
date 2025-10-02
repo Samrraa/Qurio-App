@@ -5,6 +5,9 @@
     <string name="home">Home</string>
     <string name="onboarding">Onboarding</string>
     <string name="question">Question</string>
+    <string name="game_img">game img</string>
+    <string name="start_game">Start Game</string>
+    <string name="geography">Geography</string>
     <string name="card_background">card background</string>
     <string name="coin_stack">coin stack</string>
     <string name="star">star</string>
