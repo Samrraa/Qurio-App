@@ -360,5 +360,42 @@
       "deletions": 15,
       "changed_files": 30
     }
+  },
+  {
+    "pr_number": 40,
+    "url": "https://github.com/Samrraa/QurioApp/pull/40",
+    "title": "Feature: Add game result item layout",
+    "opened_at": "2025-10-02T16:11:33Z",
+    "head_ref": "feature/result-card",
+    "base_ref": "develop",
+    "creator": {
+      "login": "Pixelh97",
+      "id": 105714212,
+      "url": "https://github.com/Pixelh97"
+    },
+    "assignees": [
+      {
+        "login": "Pixelh97",
+        "id": 105714212,
+        "url": "https://github.com/Pixelh97"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 783,
+      "deletions": 0,
+      "changed_files": 6
+    }
   }
 ]
