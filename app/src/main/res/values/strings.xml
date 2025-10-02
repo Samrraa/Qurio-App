@@ -12,4 +12,7 @@
     <string name="coin_stack">coin stack</string>
     <string name="star">star</string>
     <string name="clock">clock</string>
+    <string name="games">Games</string>
+    <string name="last_games">Last Games</string>
+    <string name="game_result">Game Result</string>
 </resources>
