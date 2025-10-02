@@ -4,6 +4,12 @@
     <string name="setting_icon">setting icon</string>
     <string name="welcome_qurio_explorer">Welcome Qurio explorer</string>
     <string name="character_image">character image</string>
+    <string name="character_image">Character Image</string>
+    <string name="rika">Rika</string>
+    <string name="check_icon">Check Icon</string>
+    <string name="lock_icon">lock icon</string>
+    <string name="coins_icon">coins icon</string>
+    <string name="_30k">30k</string>
     <string name="game_img">game img</string>
     <string name="start_game">Start Game</string>
     <string name="geography">Geography</string>
