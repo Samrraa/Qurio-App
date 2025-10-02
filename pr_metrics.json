@@ -228,6 +228,16 @@
         "first_comment_at": "2025-10-01T15:43:59Z",
         "last_comment_at": "2025-10-01T15:43:59Z",
         "count": 1
+      },
+      {
+        "author": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "first_comment_at": "2025-10-02T21:59:52Z",
+        "last_comment_at": "2025-10-02T22:10:38Z",
+        "count": 4
       }
     ],
     "approvals": [],
