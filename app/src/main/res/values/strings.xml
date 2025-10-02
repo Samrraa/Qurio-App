@@ -7,4 +7,7 @@
     <string name="coin_stack">coin stack</string>
     <string name="star">star</string>
     <string name="clock">clock</string>
+    <string name="reward">reward</string>
+    <string name="correct">Correct</string>
+    <string name="great_job">Great Job</string>
 </resources>
