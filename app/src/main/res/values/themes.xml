@@ -6,6 +6,12 @@
 
     <style name="Theme.QurioApp" parent="Base.Theme.QurioApp" />
 
+    <style name="Theme.QurioApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/surface</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/Theme.QurioApp</item>
+    </style>
 
     <style name="Headline">
         <item name="android:fontFamily">@font/fredoka_one</item>
