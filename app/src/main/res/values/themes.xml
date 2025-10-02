@@ -1,14 +1,14 @@
 <resources>
 
     <style name="Base.Theme.QurioApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka_one</item>
     </style>
 
     <style name="Theme.QurioApp" parent="Base.Theme.QurioApp" />
 
 
     <style name="Headline">
-        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="android:fontFamily">@font/fredoka_one</item>
         <item name="android:fontWeight">600</item>
     </style>
 
@@ -28,7 +28,7 @@
     </style>
 
     <style name="Title">
-        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="android:fontFamily">@font/fredoka_one</item>
         <item name="android:fontWeight">600</item>
     </style>
 
@@ -69,7 +69,7 @@
     </style>
 
     <style name="Label">
-        <item name="android:fontFamily">@font/fredoka_regular</item>
+        <item name="android:fontFamily">@font/fredoka_one</item>
         <item name="android:fontWeight">500</item>
     </style>
 
@@ -84,12 +84,12 @@
     </style>
 
     <style name="Label.Small" parent="Label">
-        <item name="android:fontFamily">@font/fredoka_medium</item>
         <item name="android:textSize">10sp</item>
         <item name="android:lineHeight">16dp</item>
     </style>
 
     <style name="Label.XSmall" parent="Label">
+        <item name="android:fontFamily">@font/fredoka_regular</item>
         <item name="android:textSize">10sp</item>
         <item name="android:lineHeight">14dp</item>
     </style>
