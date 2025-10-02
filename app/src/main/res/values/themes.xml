@@ -70,7 +70,7 @@
 
     <style name="Label">
         <item name="android:fontFamily">@font/fredoka_one</item>
-        <item name="android:fontWeight">400</item>
+        <item name="android:fontWeight">500</item>
     </style>
 
     <style name="Label.Large" parent="Label">

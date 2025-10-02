@@ -33,7 +33,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="6dp"
         android:contentDescription="@string/coins_icon"
-        android:src="@drawable/coins"
+        android:src="@drawable/coin_stack"
         app:layout_constraintBottom_toBottomOf="@+id/characterImage"
         app:layout_constraintEnd_toStartOf="@+id/characterPrice"
         app:layout_constraintHorizontal_bias="0.5"
@@ -50,7 +50,6 @@
         android:textColor="@color/shade_primary"
         app:layout_constraintBottom_toBottomOf="@+id/coin"
         app:layout_constraintEnd_toStartOf="@+id/characterImage"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/coin"
         app:layout_constraintTop_toTopOf="@+id/coin" />
 
@@ -61,6 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/rika"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:textColor="@color/shade_tertiary"
         app:layout_constraintEnd_toEndOf="@+id/characterImage"
         app:layout_constraintStart_toStartOf="@+id/characterImage"
