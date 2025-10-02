@@ -279,8 +279,8 @@
     "week": "2025-W40",
     "status": "pending",
     "diff_stats": {
-      "additions": 314,
-      "deletions": 46,
+      "additions": 276,
+      "deletions": 49,
       "changed_files": 37
     }
   }
