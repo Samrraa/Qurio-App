@@ -464,5 +464,42 @@
       "deletions": 0,
       "changed_files": 6
     }
+  },
+  {
+    "pr_number": 41,
+    "url": "https://github.com/Samrraa/QurioApp/pull/41",
+    "title": "feat: Implement MVP for question screen and update base classes",
+    "opened_at": "2025-10-02T23:50:23Z",
+    "head_ref": "feature/8-base-fragment-and-presenter",
+    "base_ref": "develop",
+    "creator": {
+      "login": "mohannadahmed00",
+      "id": 43306572,
+      "url": "https://github.com/mohannadahmed00"
+    },
+    "assignees": [
+      {
+        "login": "mohannadahmed00",
+        "id": 43306572,
+        "url": "https://github.com/mohannadahmed00"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 177,
+      "deletions": 24,
+      "changed_files": 15
+    }
   }
 ]
