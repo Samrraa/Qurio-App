@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كويريو</string>
+    <string name="back_arrow_icon">أيقونة السهم للخلف</string>
+    <string name="setting_icon">أيقونة الإعدادات</string>
+    <string name="welcome_qurio_explorer">مرحباً أيها المستكشف في كويريو</string>
+    <string name="character_image">صورة الشخصية</string>
+</resources>
