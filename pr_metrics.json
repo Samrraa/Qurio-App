@@ -313,11 +313,15 @@
     "time_to_first_approval_minutes": 1168.4833333333333,
     "required_approvals_met_at": "2025-10-02T22:43:42Z",
     "time_to_required_approvals_minutes": 1539.1166666666666,
-    "closed_at": null,
-    "merged_at": null,
-    "merged_by": null,
+    "closed_at": "2025-10-02T22:51:56Z",
+    "merged_at": "2025-10-02T22:51:56Z",
+    "merged_by": {
+      "login": "mohannadahmed00",
+      "id": 43306572,
+      "url": "https://github.com/mohannadahmed00"
+    },
     "week": "2025-W40",
-    "status": "approved",
+    "status": "merged",
     "diff_stats": {
       "additions": 381,
       "deletions": 49,
