@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/character_image"
+        android:foreground="@drawable/image_shadow"
+        android:src="@drawable/profile_cut_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/lock_icon"
+        android:src="@drawable/lock"
+        app:layout_constraintEnd_toEndOf="@+id/characterImage"
+        app:layout_constraintStart_toStartOf="@+id/characterImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:contentDescription="@string/coins_icon"
+        android:src="@drawable/coin_stack"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="@+id/characterImage"
+        app:layout_constraintEnd_toStartOf="@+id/characterPrice"
+        app:layout_constraintStart_toStartOf="@+id/characterImage"
+        app:layout_constraintTop_toBottomOf="@+id/lock" />
+
+    <TextView
+        android:id="@+id/characterPrice"
+        style="@style/Label.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/_30k"
+        android:textColor="@color/shade_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/coin"
+        app:layout_constraintEnd_toEndOf="@+id/characterImage"
+        app:layout_constraintStart_toEndOf="@+id/coin"
+        app:layout_constraintTop_toTopOf="@+id/coin" />
+
+    <TextView
+        android:id="@+id/characterName"
+        style="@style/Label.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/rika"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/shade_tertiary"
+        app:layout_constraintEnd_toEndOf="@+id/characterImage"
+        app:layout_constraintStart_toStartOf="@+id/characterImage"
+        app:layout_constraintTop_toBottomOf="@+id/characterImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
