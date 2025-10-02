@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.samrraa.qurioapp.gamecard.GameCardBackgroundView
+        android:id="@+id/gameCardBackgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        style="@style/Title.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/fredoka_medium"
+        android:paddingHorizontal="30dp"
+        android:text="@string/geography"
+        android:textAlignment="center"
+        android:textColor="@color/on_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/gameCardBackgroundView"
+        app:layout_constraintEnd_toEndOf="@+id/gameCardBackgroundView"
+        app:layout_constraintStart_toStartOf="@+id/gameCardBackgroundView" />
+
+    <!-- this button will be width 0dp width and replace with our button-->
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:text="@string/start_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gameCardBackgroundView"
+        app:layout_constraintStart_toStartOf="@+id/gameCardBackgroundView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
