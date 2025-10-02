@@ -18,29 +18,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Title -->
     <TextView
         android:id="@+id/streakTitle"
+        style="@style/Label.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fredoka_medium"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/fredoka"
+        android:maxLines="1"
         android:textColor="@color/shade_primary"
-        app:layout_goneMarginStart="16dp"
         android:textSize="14sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/fireIcon"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="16dp"
         tools:text="3 day streak, make a big series" />
 
-    <!-- Subtitle -->
     <TextView
         android:id="@+id/streakSubtitle"
+        style="@style/Label.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/fredoka_regular"
         android:text="@string/keep_it_up"
         android:textColor="@color/shade_secondary"
         android:textSize="10sp"
@@ -54,8 +53,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:baselineAligned="false"
         android:layout_marginEnd="28dp"
+        android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="7"
