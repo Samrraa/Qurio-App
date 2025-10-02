@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:ellipsize="end"
-        android:fontFamily="@font/fredoka"
+        android:fontFamily="@font/fredoka_one"
         android:maxLines="1"
         android:textColor="@color/shade_primary"
         android:textSize="14sp"
