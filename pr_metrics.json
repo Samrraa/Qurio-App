@@ -283,5 +283,42 @@
       "deletions": 49,
       "changed_files": 43
     }
+  },
+  {
+    "pr_number": 39,
+    "url": "https://github.com/Samrraa/QurioApp/pull/39",
+    "title": "feat: add character component layouts and update styles",
+    "opened_at": "2025-10-02T11:17:39Z",
+    "head_ref": "feature/character-component",
+    "base_ref": "develop",
+    "creator": {
+      "login": "Abdulrahman-Ragab-01",
+      "id": 76666355,
+      "url": "https://github.com/Abdulrahman-Ragab-01"
+    },
+    "assignees": [
+      {
+        "login": "Abdulrahman-Ragab-01",
+        "id": 76666355,
+        "url": "https://github.com/Abdulrahman-Ragab-01"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 163,
+      "deletions": 15,
+      "changed_files": 30
+    }
   }
 ]
