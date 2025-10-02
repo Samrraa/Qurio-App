@@ -3,19 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/qurio_nav_graph"
-    app:startDestination="@id/splashFragment">
-
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.samrraa.qurioapp.view.splash.SplashFragment"
-        android:label="fragment_spalsh"
-        tools:layout="@layout/fragment_spalsh">
-        <action
-            android:id="@+id/action_splashFragment_to_onboarding_fragment"
-            app:destination="@id/onboarding_fragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+    app:startDestination="@id/onboarding_fragment">
 
     <fragment
         android:id="@+id/onboarding_fragment"
@@ -39,6 +27,5 @@
         android:id="@+id/question_fragment"
         android:name="com.samrraa.qurioapp.view.question.QuestionFragment"
         tools:layout="@layout/fragment_question" />
-
 
 </navigation>
