@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qurio_nav_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.samrraa.qurioapp.view.onboarding.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboarding_fragment_to_home_fragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.samrraa.qurioapp.view.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_question_fragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.samrraa.qurioapp.view.question.QuestionFragment"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.samrraa.qurioapp.view.games.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" />
+    <fragment
+        android:id="@+id/lastGamesFragment"
+        android:name="com.samrraa.qurioapp.view.lastgames.LastGamesFragment"
+        android:label="fragment_last_games"
+        tools:layout="@layout/fragment_last_games" />
+    <fragment
+        android:id="@+id/gameResultFragment"
+        android:name="com.samrraa.qurioapp.view.gameresult.GameResultFragment"
+        android:label="fragment_game_result"
+        tools:layout="@layout/fragment_game_result" />
+
+</navigation>
