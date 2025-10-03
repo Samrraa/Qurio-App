@@ -1,5 +1,6 @@
 package com.samrraa.qurioapp.view.lastgames
 
+import android.content.Context
 import android.graphics.Rect
 import android.view.LayoutInflater
 import android.view.View
@@ -8,12 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.samrraa.qurioapp.databinding.LastGameBinding
 import com.samrraa.qurioapp.view.lastgames.model.History
 
-
-class HomeAdapter(
+class LastGameAdapter(
     private val items: List<History>,
-) : RecyclerView.Adapter<HomeAdapter.HomeCardViewHolder>() {
+) : RecyclerView.Adapter<LastGameAdapter.LastGameCardViewHolder>() {
 
-    inner class HomeCardViewHolder(private val binding: LastGameBinding) :
+    inner class LastGameCardViewHolder(private val binding: LastGameBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(history: History) {
             binding.tvDate.text = history.date
@@ -25,12 +25,13 @@ class HomeAdapter(
         }
 
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeCardViewHolder {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LastGameCardViewHolder {
         val binding = LastGameBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return HomeCardViewHolder(binding)
+        return LastGameCardViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: HomeCardViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: LastGameCardViewHolder, position: Int) {
         holder.bind(items[position])
 
     }
@@ -38,13 +39,18 @@ class HomeAdapter(
     override fun getItemCount(): Int = items.size
 
 }
-class SpaceItemDecoration(private val space: Int) : RecyclerView.ItemDecoration() {
+
+class SpaceItemDecoration(
+    private val context: Context,
+    private val space: Int
+) : RecyclerView.ItemDecoration() {
     override fun getItemOffsets(
         outRect: Rect,
         view: View,
         parent: RecyclerView,
         state: RecyclerView.State
     ) {
-        outRect.bottom = space
+        outRect.bottom = (space * context.resources.displayMetrics.density).toInt()
     }
+
 }

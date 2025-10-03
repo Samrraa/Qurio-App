@@ -1,6 +1,5 @@
 package com.samrraa.qurioapp.view.lastgames
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,8 +27,8 @@ class LastGamesFragment : BaseFragment<FragmentLastGamesBinding>() {
 
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = HomeAdapter(historyList)
-            addItemDecoration(SpaceItemDecoration(12.dpToPx(requireContext())))
+            adapter = LastGameAdapter(historyList)
+            addItemDecoration(SpaceItemDecoration(requireContext(), 12))
         }
     }
 
@@ -76,7 +75,5 @@ class LastGamesFragment : BaseFragment<FragmentLastGamesBinding>() {
         )
     )
 
-    private fun Int.dpToPx(context: Context): Int {
-        return (this * context.resources.displayMetrics.density).toInt()
-    }
+
 }
