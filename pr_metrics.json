@@ -481,9 +481,9 @@
     "week": "2025-W40",
     "status": "closed",
     "diff_stats": {
-      "additions": 1046,
+      "additions": 1014,
       "deletions": 0,
-      "changed_files": 11
+      "changed_files": 10
     }
   },
   {
