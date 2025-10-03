@@ -589,5 +589,42 @@
       "deletions": 29,
       "changed_files": 10
     }
+  },
+  {
+    "pr_number": 44,
+    "url": "https://github.com/Samrraa/QurioApp/pull/44",
+    "title": "feature/14-implement-last-games-ui-screen",
+    "opened_at": "2025-10-03T19:00:36Z",
+    "head_ref": "feature/14-implement-last-games-ui-screen",
+    "base_ref": "develop",
+    "creator": {
+      "login": "fatmahgazy",
+      "id": 143911324,
+      "url": "https://github.com/fatmahgazy"
+    },
+    "assignees": [
+      {
+        "login": "fatmahgazy",
+        "id": 143911324,
+        "url": "https://github.com/fatmahgazy"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 266,
+      "deletions": 38,
+      "changed_files": 14
+    }
   }
 ]
