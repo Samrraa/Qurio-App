@@ -9,6 +9,9 @@
             name="starsEarned"
             type="Integer" />
 
+        <variable
+            name="isWon"
+            type="Boolean" />
         <import type="android.view.View" />
     </data>
 
@@ -77,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="12dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginVertical="32dp"
                         android:gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
@@ -193,95 +196,167 @@
         </com.google.android.material.card.MaterialCardView>
 
 
-        <ImageView
-            android:id="@+id/shine_effect"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/victory_section"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/ic_result_shape"
-            app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
-            app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
-            app:layout_constraintStart_toStartOf="@id/ribbon_banner"
-            app:layout_constraintTop_toTopOf="@id/ribbon_banner" />
-
-
-        <ImageView
-            android:id="@+id/ribbon_banner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/banner_ribbon"
+            android:visibility="@{isWon ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toTopOf="@id/result_details_section"
             app:layout_constraintEnd_toEndOf="@id/result_details_section"
             app:layout_constraintStart_toStartOf="@id/result_details_section"
-            app:layout_constraintTop_toTopOf="@id/result_details_section" />
+            app:layout_constraintTop_toTopOf="@id/result_details_section">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/great_job"
-            android:textColor="#1980B2"
-            android:textFontWeight="600"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/great_job_text"
-            app:layout_constraintEnd_toEndOf="@id/great_job_text"
-            app:layout_constraintStart_toStartOf="@id/great_job_text"
-            app:layout_constraintTop_toTopOf="@id/great_job_text" />
-
-        <TextView
-            android:id="@+id/great_job_text"
-            style="@style/Headline.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="@string/great_job"
-            android:textColor="@color/on_primary"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon_banner"
-            app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
-            app:layout_constraintStart_toStartOf="@id/ribbon_banner"
-            app:layout_constraintTop_toTopOf="@id/ribbon_banner" />
-
-        <LinearLayout
-            android:id="@+id/stars_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
-            app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
-            app:layout_constraintStart_toStartOf="@id/ribbon_banner"
-            app:layout_constraintTop_toTopOf="@id/ribbon_banner">
+            <ImageView
+                android:id="@+id/shine_effect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_result_shape"
+                app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
+                app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
+                app:layout_constraintStart_toStartOf="@id/ribbon_banner"
+                app:layout_constraintTop_toTopOf="@id/ribbon_banner" />
 
 
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/ribbon_banner"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_star"
-                android:visibility="@{starsEarned &gt;= 1 ? View.VISIBLE : View.GONE}"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:src="@drawable/banner_ribbon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/great_job"
+                android:textColor="#1980B2"
+                android:textFontWeight="600"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/great_job_text"
+                app:layout_constraintEnd_toEndOf="@id/great_job_text"
+                app:layout_constraintStart_toStartOf="@id/great_job_text"
+                app:layout_constraintTop_toTopOf="@id/great_job_text" />
+
+            <TextView
+                android:id="@+id/great_job_text"
+                style="@style/Headline.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/great_job"
+                android:textColor="@color/on_primary"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon_banner"
+                app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
+                app:layout_constraintStart_toStartOf="@id/ribbon_banner"
+                app:layout_constraintTop_toTopOf="@id/ribbon_banner" />
+
+            <LinearLayout
+                android:id="@+id/stars_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
+                app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
+                app:layout_constraintStart_toStartOf="@id/ribbon_banner"
+                app:layout_constraintTop_toTopOf="@id/ribbon_banner">
+
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_star"
+                    android:visibility="@{starsEarned &gt;= 1 ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_star"
+                    android:visibility="@{starsEarned &gt;= 2 ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lose_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{isWon ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toTopOf="@id/result_details_section"
+            app:layout_constraintEnd_toEndOf="@id/result_details_section"
+            app:layout_constraintStart_toStartOf="@id/result_details_section"
+            app:layout_constraintTop_toTopOf="@id/result_details_section">
 
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/shine_effect_lose"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:adjustViewBounds="true"
-                android:paddingTop="2dp"
-                android:src="@drawable/ic_star"
-                android:visibility="@{starsEarned &gt;= 2 ? View.VISIBLE : View.GONE}"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:src="@drawable/ic_result_shape_lose"
+                app:layout_constraintBottom_toTopOf="@id/ribbon_banner_lose"
+                app:layout_constraintEnd_toEndOf="@id/ribbon_banner_lose"
+                app:layout_constraintStart_toStartOf="@id/ribbon_banner_lose"
+                app:layout_constraintTop_toTopOf="@id/ribbon_banner_lose" />
+
 
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/ribbon_banner_lose"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_star"
-                app:layout_constraintStart_toStartOf="parent" />
-        </LinearLayout>
+                android:src="@drawable/banner_ribbon_lose"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/you_lose"
+                android:textColor="#E6311F"
+                android:textFontWeight="600"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/great_job_text_lose"
+                app:layout_constraintEnd_toEndOf="@id/great_job_text_lose"
+                app:layout_constraintStart_toStartOf="@id/great_job_text_lose"
+                app:layout_constraintTop_toTopOf="@id/great_job_text_lose" />
+
+            <TextView
+                android:id="@+id/great_job_text_lose"
+                style="@style/Headline.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/you_lose"
+                android:textColor="@color/on_primary"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon_banner_lose"
+                app:layout_constraintEnd_toEndOf="@id/ribbon_banner_lose"
+                app:layout_constraintStart_toStartOf="@id/ribbon_banner_lose"
+                app:layout_constraintTop_toTopOf="@id/ribbon_banner_lose" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
