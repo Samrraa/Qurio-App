@@ -646,11 +646,15 @@
     "time_to_first_approval_minutes": 44.31666666666667,
     "required_approvals_met_at": "2025-10-03T19:47:33Z",
     "time_to_required_approvals_minutes": 46.95,
-    "closed_at": null,
-    "merged_at": null,
-    "merged_by": null,
+    "closed_at": "2025-10-03T19:53:20Z",
+    "merged_at": "2025-10-03T19:53:20Z",
+    "merged_by": {
+      "login": "fatmahgazy",
+      "id": 143911324,
+      "url": "https://github.com/fatmahgazy"
+    },
     "week": "2025-W40",
-    "status": "approved",
+    "status": "merged",
     "diff_stats": {
       "additions": 180,
       "deletions": 8,
