@@ -103,7 +103,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/correct"
-                                    android:textColor="@color/shade_primary" />
+                                    android:textColor="@color/shade_secondary" />
 
                                 <TextView
                                     android:id="@+id/correct_answers_count"
@@ -137,8 +137,8 @@
                                     style="@style/Body.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/correct"
-                                    android:textColor="@color/shade_primary" />
+                                    android:text="@string/incorrect"
+                                    android:textColor="@color/shade_secondary" />
 
                                 <TextView
                                     android:id="@+id/incorrect_answers_count"
@@ -171,8 +171,8 @@
                                     style="@style/Body.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/correct"
-                                    android:textColor="@color/shade_primary" />
+                                    android:text="@string/skipped"
+                                    android:textColor="@color/shade_secondary" />
 
                                 <TextView
                                     android:id="@+id/skipped_answers_count"

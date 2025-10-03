@@ -24,4 +24,6 @@
     <string name="games">Games</string>
     <string name="last_games">Last Games</string>
     <string name="game_result">Game Result</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="skipped">Skipped</string>
 </resources>
