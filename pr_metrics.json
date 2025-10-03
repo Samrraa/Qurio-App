@@ -135,8 +135,8 @@
           "url": "https://github.com/Hasa9nAli"
         },
         "first_comment_at": "2025-10-01T14:40:29Z",
-        "last_comment_at": "2025-10-01T14:42:07Z",
-        "count": 2
+        "last_comment_at": "2025-10-01T22:28:26Z",
+        "count": 3
       },
       {
         "author": {
@@ -255,6 +255,155 @@
       "additions": 162,
       "deletions": 0,
       "changed_files": 16
+    }
+  },
+  {
+    "pr_number": 4,
+    "url": "https://github.com/Samrraa/QurioApp/pull/4",
+    "title": "Add streak component UI and assets",
+    "opened_at": "2025-10-01T16:29:35Z",
+    "head_ref": "component/daily_streak",
+    "base_ref": "develop",
+    "creator": {
+      "login": "Mostafa-alsaygh",
+      "id": 106277855,
+      "url": "https://github.com/Mostafa-alsaygh"
+    },
+    "assignees": [
+      {
+        "login": "Mostafa-alsaygh",
+        "id": 106277855,
+        "url": "https://github.com/Mostafa-alsaygh"
+      }
+    ],
+    "comments": [
+      {
+        "author": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "first_comment_at": "2025-10-01T22:36:03Z",
+        "last_comment_at": "2025-10-01T22:57:21Z",
+        "count": 10
+      },
+      {
+        "author": {
+          "login": "Mostafa-alsaygh",
+          "id": 106277855,
+          "url": "https://github.com/Mostafa-alsaygh"
+        },
+        "first_comment_at": "2025-10-02T16:16:45Z",
+        "last_comment_at": "2025-10-03T13:55:14Z",
+        "count": 5
+      },
+      {
+        "author": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "first_comment_at": "2025-10-02T22:23:59Z",
+        "last_comment_at": "2025-10-02T22:31:13Z",
+        "count": 4
+      }
+    ],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "submitted_at": "2025-10-03T16:59:23Z",
+        "commit_id": "9d80f8cd16bd5cb5314d2aaf71b3cf758bbc01b3"
+      },
+      {
+        "reviewer": {
+          "login": "fatmahgazy",
+          "id": 143911324,
+          "url": "https://github.com/fatmahgazy"
+        },
+        "submitted_at": "2025-10-03T17:00:33Z",
+        "commit_id": "9d80f8cd16bd5cb5314d2aaf71b3cf758bbc01b3"
+      }
+    ],
+    "required_approvals": 2,
+    "first_approved_at": "2025-10-03T16:59:23Z",
+    "time_to_first_approval_minutes": 2909.8,
+    "required_approvals_met_at": "2025-10-03T17:00:33Z",
+    "time_to_required_approvals_minutes": 2910.9666666666667,
+    "closed_at": "2025-10-03T17:02:37Z",
+    "merged_at": "2025-10-03T17:02:37Z",
+    "merged_by": {
+      "login": "Mostafa-alsaygh",
+      "id": 106277855,
+      "url": "https://github.com/Mostafa-alsaygh"
+    },
+    "week": "2025-W40",
+    "status": "merged",
+    "diff_stats": {
+      "additions": 182,
+      "deletions": 0,
+      "changed_files": 10
+    }
+  },
+  {
+    "pr_number": 5,
+    "url": "https://github.com/Samrraa/QurioApp/pull/5",
+    "title": "feat: add character component layout and resources",
+    "opened_at": "2025-10-01T20:46:15Z",
+    "head_ref": "feature/character-component",
+    "base_ref": "develop",
+    "creator": {
+      "login": "Abdulrahman-Ragab-01",
+      "id": 76666355,
+      "url": "https://github.com/Abdulrahman-Ragab-01"
+    },
+    "assignees": [
+      {
+        "login": "Abdulrahman-Ragab-01",
+        "id": 76666355,
+        "url": "https://github.com/Abdulrahman-Ragab-01"
+      }
+    ],
+    "comments": [
+      {
+        "author": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "first_comment_at": "2025-10-01T23:01:16Z",
+        "last_comment_at": "2025-10-01T23:25:33Z",
+        "count": 11
+      },
+      {
+        "author": {
+          "login": "Abdulrahman-Ragab-01",
+          "id": 76666355,
+          "url": "https://github.com/Abdulrahman-Ragab-01"
+        },
+        "first_comment_at": "2025-10-02T08:49:13Z",
+        "last_comment_at": "2025-10-02T08:56:09Z",
+        "count": 5
+      }
+    ],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": "2025-10-02T10:57:42Z",
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "closed",
+    "diff_stats": {
+      "additions": 162,
+      "deletions": 4,
+      "changed_files": 27
     }
   },
   {
@@ -431,7 +580,7 @@
   {
     "pr_number": 40,
     "url": "https://github.com/Samrraa/QurioApp/pull/40",
-    "title": "Feature: Add game result item layout",
+    "title": "feat: add game result item layout",
     "opened_at": "2025-10-02T16:11:33Z",
     "head_ref": "feature/result-card",
     "base_ref": "develop",
@@ -498,7 +647,7 @@
     "merged_at": null,
     "merged_by": null,
     "week": "2025-W40",
-    "status": "closed",
+    "status": "approved",
     "diff_stats": {
       "additions": 1014,
       "deletions": 0,
@@ -536,10 +685,20 @@
         "count": 1
       }
     ],
-    "approvals": [],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "Mostafa-alsaygh",
+          "id": 106277855,
+          "url": "https://github.com/Mostafa-alsaygh"
+        },
+        "submitted_at": "2025-10-03T22:36:41Z",
+        "commit_id": "a4c27a095f97521682b3488738f6dea02c2da497"
+      }
+    ],
     "required_approvals": 2,
-    "first_approved_at": null,
-    "time_to_first_approval_minutes": null,
+    "first_approved_at": "2025-10-03T22:36:41Z",
+    "time_to_first_approval_minutes": 1366.3,
     "required_approvals_met_at": null,
     "time_to_required_approvals_minutes": null,
     "closed_at": null,
@@ -549,8 +708,8 @@
     "status": "pending",
     "diff_stats": {
       "additions": 177,
-      "deletions": 25,
-      "changed_files": 16
+      "deletions": 24,
+      "changed_files": 15
     }
   },
   {
