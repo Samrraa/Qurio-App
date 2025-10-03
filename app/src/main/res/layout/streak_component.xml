@@ -103,7 +103,7 @@
             android:layout_weight="1" />
 
         <include
-            android:id="@+id/day6"
+            android:id="@+id/day7"
             layout="@layout/day_item"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
