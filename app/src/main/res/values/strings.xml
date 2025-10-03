@@ -12,6 +12,8 @@
     <string name="coins_icon">coins icon</string>
     <string name="_30k">30k</string>
     <string name="game_img">game img</string>
+    <string name="play_now">Play Now</string>
+    <string name="music">Music</string>
     <string name="start_game">Start Game</string>
     <string name="geography">Geography</string>
     <string name="card_background">card background</string>
@@ -21,4 +23,5 @@
     <string name="games">Games</string>
     <string name="last_games">Last Games</string>
     <string name="game_result">Game Result</string>
+    <string name="game">Game</string>
 </resources>
