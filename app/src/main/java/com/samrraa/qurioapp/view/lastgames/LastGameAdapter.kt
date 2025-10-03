@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.samrraa.qurioapp.R
-import com.samrraa.qurioapp.view.home.model.History
+import com.samrraa.qurioapp.view.lastgames.model.History
 
 
 class HomeAdapter(

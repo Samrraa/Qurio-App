@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.samrraa.qurioapp.base.BaseFragment
 import com.samrraa.qurioapp.databinding.FragmentLastGamesBinding
-import com.samrraa.qurioapp.view.home.model.History
-import kotlinx.datetime.LocalDateTime
+import com.samrraa.qurioapp.view.lastgames.model.History
 
 class LastGamesFragment : BaseFragment<FragmentLastGamesBinding>() {
 
@@ -45,35 +44,35 @@ class LastGamesFragment : BaseFragment<FragmentLastGamesBinding>() {
             coin = 304,
             star = "0",
             subject = "Science & Nature",
-            time = LocalDateTime(2025, 10, 2, 15, 30)
+            time = "2025, 10, 2, 15, 30"
         ),
         History(
             date = "2025-10-02",
             coin = 305,
             star = "1",
             subject = "Technology",
-            time = LocalDateTime(2025, 10, 2, 15, 30)
+            time = "2025, 10, 2, 15, 30"
         ),
         History(
             date = "2025-10-01",
             coin = 306,
             star = "5",
             subject = "Math",
-            time = LocalDateTime(2025, 10, 1, 9, 0)
+            time = "2025, 10, 1, 9, 0"
         ),
         History(
             date = "2025-09-30",
             coin = 307,
             star = "8",
             subject = "History",
-            time = LocalDateTime(2025, 9, 30, 18, 45)
+            time = "2025, 9, 30, 18, 45"
         ),
         History(
             date = "2025-09-29",
             coin = 308,
             star = "12",
             subject = "Geography",
-            time = LocalDateTime(2025, 9, 29, 12, 20)
+            time = "2025, 9, 29, 12, 20"
         )
     )
 
