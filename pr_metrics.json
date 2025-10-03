@@ -660,5 +660,42 @@
       "deletions": 8,
       "changed_files": 7
     }
+  },
+  {
+    "pr_number": 45,
+    "url": "https://github.com/Samrraa/QurioApp/pull/45",
+    "title": "feat: Implement loading screen",
+    "opened_at": "2025-10-03T22:14:54Z",
+    "head_ref": "feature/32-add-loading-state-component",
+    "base_ref": "develop",
+    "creator": {
+      "login": "fatmahgazy",
+      "id": 143911324,
+      "url": "https://github.com/fatmahgazy"
+    },
+    "assignees": [
+      {
+        "login": "fatmahgazy",
+        "id": 143911324,
+        "url": "https://github.com/fatmahgazy"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 65,
+      "deletions": 0,
+      "changed_files": 5
+    }
   }
 ]
