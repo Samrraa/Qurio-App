@@ -552,5 +552,42 @@
       "deletions": 25,
       "changed_files": 16
     }
+  },
+  {
+    "pr_number": 43,
+    "url": "https://github.com/Samrraa/QurioApp/pull/43",
+    "title": "feat: Implement Home screen",
+    "opened_at": "2025-10-03T18:09:42Z",
+    "head_ref": "feat/implement-home-screen",
+    "base_ref": "develop",
+    "creator": {
+      "login": "fatmahgazy",
+      "id": 143911324,
+      "url": "https://github.com/fatmahgazy"
+    },
+    "assignees": [
+      {
+        "login": "fatmahgazy",
+        "id": 143911324,
+        "url": "https://github.com/fatmahgazy"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 206,
+      "deletions": 29,
+      "changed_files": 10
+    }
   }
 ]
