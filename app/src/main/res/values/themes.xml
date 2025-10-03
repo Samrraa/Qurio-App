@@ -99,4 +99,14 @@
         <item name="android:textSize">10sp</item>
         <item name="android:lineHeight">14dp</item>
     </style>
+
+
+    <style name="ResultCardShape">
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+        <item name="cornerSizeTopRight">2dp</item>
+        <item name="cornerSizeBottomLeft">2dp</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+    </style>
 </resources>

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        
+
         <variable
             name="starsEarned"
             type="Integer" />
 
-        <import type="android.view.View"/>
+        <import type="android.view.View" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -89,6 +89,7 @@
                             app:contentPaddingLeft="8dp"
                             app:contentPaddingRight="8dp"
                             app:contentPaddingTop="2dp"
+                            app:shapeAppearanceOverlay="@style/ResultCardShape"
                             app:strokeColor="@color/shade_quad">
 
 
@@ -125,6 +126,7 @@
                             app:contentPaddingLeft="8dp"
                             app:contentPaddingRight="8dp"
                             app:contentPaddingTop="2dp"
+                            app:shapeAppearanceOverlay="@style/ResultCardShape"
                             app:strokeColor="@color/shade_quad">
 
                             <LinearLayout
@@ -159,6 +161,7 @@
                             app:contentPaddingLeft="8dp"
                             app:contentPaddingRight="8dp"
                             app:contentPaddingTop="2dp"
+                            app:shapeAppearanceOverlay="@style/ResultCardShape"
                             app:strokeColor="@color/shade_quad">
 
                             <LinearLayout
@@ -196,9 +199,9 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/ic_result_shape"
-            app:layout_constraintStart_toStartOf="@id/ribbon_banner"
-            app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
             app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
+            app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
+            app:layout_constraintStart_toStartOf="@id/ribbon_banner"
             app:layout_constraintTop_toTopOf="@id/ribbon_banner" />
 
 
@@ -219,10 +222,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="@string/great_job"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:textColor="#1980B2"
             android:textFontWeight="600"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/great_job_text"
             app:layout_constraintEnd_toEndOf="@id/great_job_text"
             app:layout_constraintStart_toStartOf="@id/great_job_text"
@@ -245,32 +248,32 @@
             android:id="@+id/stars_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
             android:paddingBottom="8dp"
-            app:layout_constraintTop_toTopOf="@id/ribbon_banner"
+            app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
             app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
             app:layout_constraintStart_toStartOf="@id/ribbon_banner"
-            app:layout_constraintBottom_toTopOf="@id/ribbon_banner">
+            app:layout_constraintTop_toTopOf="@id/ribbon_banner">
 
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_star"
                 android:adjustViewBounds="true"
-                app:layout_constraintStart_toStartOf="parent"
-                android:visibility="@{starsEarned &gt;= 1 ? View.VISIBLE : View.GONE}" />
+                android:src="@drawable/ic_star"
+                android:visibility="@{starsEarned &gt;= 1 ? View.VISIBLE : View.GONE}"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_star"
-                android:adjustViewBounds="true"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
                 android:paddingTop="2dp"
-                android:visibility="@{starsEarned &gt;= 2 ? View.VISIBLE : View.GONE}" />
+                android:src="@drawable/ic_star"
+                android:visibility="@{starsEarned &gt;= 2 ? View.VISIBLE : View.GONE}"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:layout_width="48dp"
