@@ -609,18 +609,7 @@
         "url": "https://github.com/fatmahgazy"
       }
     ],
-    "comments": [
-      {
-        "author": {
-          "login": "mohannadahmed00",
-          "id": 43306572,
-          "url": "https://github.com/mohannadahmed00"
-        },
-        "first_comment_at": "2025-10-03T19:18:30Z",
-        "last_comment_at": "2025-10-03T19:18:30Z",
-        "count": 1
-      }
-    ],
+    "comments": [],
     "approvals": [],
     "required_approvals": 2,
     "first_approved_at": null,
@@ -633,9 +622,9 @@
     "week": "2025-W40",
     "status": "pending",
     "diff_stats": {
-      "additions": 261,
-      "deletions": 38,
-      "changed_files": 14
+      "additions": 180,
+      "deletions": 8,
+      "changed_files": 7
     }
   }
 ]
