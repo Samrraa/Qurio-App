@@ -25,4 +25,5 @@
     <string name="last_games">Last Games</string>
     <string name="game_result">Game Result</string>
     <string name="game">Game</string>
+    <string name="loading_game">Loading Game</string>
 </resources>

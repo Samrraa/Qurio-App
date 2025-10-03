@@ -42,5 +42,10 @@
         android:name="com.samrraa.qurioapp.view.gameresult.GameResultFragment"
         android:label="fragment_game_result"
         tools:layout="@layout/fragment_game_result" />
+    <fragment
+        android:id="@+id/loadingFragment3"
+        android:name="com.samrraa.qurioapp.view.loading.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
 
 </navigation>
