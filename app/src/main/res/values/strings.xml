@@ -30,4 +30,5 @@
     <string name="skipped">Skipped</string>
     <string name="you_lose">You Lose</string>
     <string name="game">Game</string>
+    <string name="loading_game">Loading Game</string>
 </resources>
