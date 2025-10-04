@@ -3,7 +3,6 @@
     <string name="keep_it_up">KEEP IT UP!</string>
     <string name="fire_image">fire_image</string>
     <string name="day_fire">day fire</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="onboarding">Onboarding</string>
@@ -30,4 +29,5 @@
     <string name="incorrect">Incorrect</string>
     <string name="skipped">Skipped</string>
     <string name="you_lose">You Lose</string>
+    <string name="game">Game</string>
 </resources>
