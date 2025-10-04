@@ -25,5 +25,9 @@
     <string name="last_games">Last Games</string>
     <string name="game_result">Game Result</string>
     <string name="game">Game</string>
+    <string name="no_connection">No Connection</string>
+    <string name="offline_error">Oops! It looks like you’re offline. Please check your internet connection to continue playing</string>
+    <string name="retry">Retry</string>
     <string name="loading_game">Loading Game</string>
+
 </resources>
