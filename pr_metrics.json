@@ -849,23 +849,32 @@
         "first_comment_at": "2025-10-04T03:25:00Z",
         "last_comment_at": "2025-10-04T03:25:00Z",
         "count": 1
+      },
+      {
+        "author": {
+          "login": "Hasa9nAli",
+          "id": 92353024,
+          "url": "https://github.com/Hasa9nAli"
+        },
+        "first_comment_at": "2025-10-04T10:39:18Z",
+        "last_comment_at": "2025-10-04T10:39:18Z",
+        "count": 1
       }
     ],
     "approvals": [
       {
         "reviewer": {
-          "login": "mohannadahmed00",
-          "id": 43306572,
-          "url": "https://github.com/mohannadahmed00"
+          "login": "Hasa9nAli",
+          "id": 92353024,
+          "url": "https://github.com/Hasa9nAli"
         },
-        "submitted_at": "2025-10-04T02:35:53Z",
-        "commit_id": "e572269a4a72f6b1334a3b438792a966d9bb55a9",
-        "note": "May be for different commit"
+        "submitted_at": "2025-10-04T10:40:49Z",
+        "commit_id": "c996fd471de0bbae7d93f906a8d119c0d5d0fd78"
       }
     ],
     "required_approvals": 2,
-    "first_approved_at": "2025-10-04T02:35:53Z",
-    "time_to_first_approval_minutes": 260.98333333333335,
+    "first_approved_at": "2025-10-04T10:40:49Z",
+    "time_to_first_approval_minutes": 745.9166666666666,
     "required_approvals_met_at": null,
     "time_to_required_approvals_minutes": null,
     "closed_at": null,
