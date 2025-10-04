@@ -25,5 +25,10 @@
     <string name="last_games">Last Games</string>
     <string name="game_result">Game Result</string>
     <string name="game">Game</string>
+    <string name="question_format_image">Question Format Image</string>
+    <string name="geography_economy_question">Which of the following best explains how a country’s physical geography can influence its level of economic development?</string>
+    <string name="q_1_12">Q 1/12</string>
+    <string name="image_description">image_description</string>
+    <string name="hard">Hard</string>
     <string name="loading_game">Loading Game</string>
 </resources>
