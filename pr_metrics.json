@@ -859,28 +859,20 @@
           "url": "https://github.com/mohannadahmed00"
         },
         "submitted_at": "2025-10-04T02:35:53Z",
-        "commit_id": "e572269a4a72f6b1334a3b438792a966d9bb55a9"
-      },
-      {
-        "reviewer": {
-          "login": "Abdulrahman-Ragab-01",
-          "id": 76666355,
-          "url": "https://github.com/Abdulrahman-Ragab-01"
-        },
-        "submitted_at": "2025-10-04T04:01:32Z",
-        "commit_id": "e572269a4a72f6b1334a3b438792a966d9bb55a9"
+        "commit_id": "e572269a4a72f6b1334a3b438792a966d9bb55a9",
+        "note": "May be for different commit"
       }
     ],
     "required_approvals": 2,
     "first_approved_at": "2025-10-04T02:35:53Z",
     "time_to_first_approval_minutes": 260.98333333333335,
-    "required_approvals_met_at": "2025-10-04T04:01:32Z",
-    "time_to_required_approvals_minutes": 346.6333333333333,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
     "closed_at": null,
     "merged_at": null,
     "merged_by": null,
     "week": "2025-W40",
-    "status": "approved",
+    "status": "pending",
     "diff_stats": {
       "additions": 33,
       "deletions": 0,
