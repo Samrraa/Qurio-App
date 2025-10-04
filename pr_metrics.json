@@ -939,10 +939,20 @@
         "count": 2
       }
     ],
-    "approvals": [],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "submitted_at": "2025-10-04T11:05:18Z",
+        "commit_id": "fc5b7663342f45533f380c73368456a601ee509c"
+      }
+    ],
     "required_approvals": 2,
-    "first_approved_at": null,
-    "time_to_first_approval_minutes": null,
+    "first_approved_at": "2025-10-04T11:05:18Z",
+    "time_to_first_approval_minutes": 665.0333333333333,
     "required_approvals_met_at": null,
     "time_to_required_approvals_minutes": null,
     "closed_at": null,
