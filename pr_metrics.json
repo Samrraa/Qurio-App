@@ -936,5 +936,42 @@
       "deletions": 0,
       "changed_files": 7
     }
+  },
+  {
+    "pr_number": 47,
+    "url": "https://github.com/Samrraa/QurioApp/pull/47",
+    "title": "Feature/difficulty level and question format component",
+    "opened_at": "2025-10-04T10:31:37Z",
+    "head_ref": "feature/difficulty-level-and-question-format-component",
+    "base_ref": "develop",
+    "creator": {
+      "login": "Hasa9nAli",
+      "id": 92353024,
+      "url": "https://github.com/Hasa9nAli"
+    },
+    "assignees": [
+      {
+        "login": "Hasa9nAli",
+        "id": 92353024,
+        "url": "https://github.com/Hasa9nAli"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 290,
+      "deletions": 0,
+      "changed_files": 13
+    }
   }
 ]
