@@ -847,8 +847,8 @@
           "url": "https://github.com/mohannadahmed00"
         },
         "first_comment_at": "2025-10-04T03:25:00Z",
-        "last_comment_at": "2025-10-04T03:25:00Z",
-        "count": 1
+        "last_comment_at": "2025-10-04T11:07:51Z",
+        "count": 2
       },
       {
         "author": {
@@ -870,18 +870,27 @@
         },
         "submitted_at": "2025-10-04T10:40:49Z",
         "commit_id": "c996fd471de0bbae7d93f906a8d119c0d5d0fd78"
+      },
+      {
+        "reviewer": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "submitted_at": "2025-10-04T11:08:04Z",
+        "commit_id": "c996fd471de0bbae7d93f906a8d119c0d5d0fd78"
       }
     ],
     "required_approvals": 2,
     "first_approved_at": "2025-10-04T10:40:49Z",
     "time_to_first_approval_minutes": 745.9166666666666,
-    "required_approvals_met_at": null,
-    "time_to_required_approvals_minutes": null,
+    "required_approvals_met_at": "2025-10-04T11:08:04Z",
+    "time_to_required_approvals_minutes": 773.1666666666666,
     "closed_at": null,
     "merged_at": null,
     "merged_by": null,
     "week": "2025-W40",
-    "status": "pending",
+    "status": "approved",
     "diff_stats": {
       "additions": 33,
       "deletions": 0,
