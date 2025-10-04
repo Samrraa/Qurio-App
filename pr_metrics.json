@@ -918,10 +918,20 @@
         "count": 2
       }
     ],
-    "approvals": [],
+    "approvals": [
+      {
+        "reviewer": {
+          "login": "Abdulrahman-Ragab-01",
+          "id": 76666355,
+          "url": "https://github.com/Abdulrahman-Ragab-01"
+        },
+        "submitted_at": "2025-10-04T04:02:01Z",
+        "commit_id": "962fbd4e7fa49be4ca453319a201a9acfb80cf2c"
+      }
+    ],
     "required_approvals": 2,
-    "first_approved_at": null,
-    "time_to_first_approval_minutes": null,
+    "first_approved_at": "2025-10-04T04:02:01Z",
+    "time_to_first_approval_minutes": 241.75,
     "required_approvals_met_at": null,
     "time_to_required_approvals_minutes": null,
     "closed_at": null,
