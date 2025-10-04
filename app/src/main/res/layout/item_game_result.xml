@@ -51,7 +51,8 @@
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/ic_coin_stack" />
+                    android:src="@drawable/ic_coin_stack"
+                    android:contentDescription="@string/coins_stack_icon"/>
 
                 <TextView
                     android:id="@+id/total_score"
@@ -206,6 +207,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/ic_result_shape"
+            android:contentDescription="@null"
             app:layout_constraintBottom_toTopOf="@id/ribbon_banner"
             app:layout_constraintEnd_toEndOf="@id/ribbon_banner"
             app:layout_constraintStart_toStartOf="@id/ribbon_banner"
@@ -218,6 +220,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/banner_ribbon"
+            android:contentDescription="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -269,6 +272,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:src="@drawable/ic_star"
+                android:contentDescription="@string/you_got_a_star"
                 android:visibility="@{starsEarned &gt;= 1 ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -279,6 +283,7 @@
                 android:adjustViewBounds="true"
                 android:paddingTop="2dp"
                 android:src="@drawable/ic_star"
+                android:contentDescription="@string/you_got_a_star"
                 android:visibility="@{starsEarned &gt;= 2 ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -287,6 +292,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:src="@drawable/ic_star"
+                android:contentDescription="@string/you_got_a_star"
                 app:layout_constraintStart_toStartOf="parent" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -306,6 +312,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            android:contentDescription="@null"
             android:src="@drawable/ic_result_shape_lose"
             app:layout_constraintBottom_toTopOf="@id/ribbon_banner_lose"
             app:layout_constraintEnd_toEndOf="@id/ribbon_banner_lose"
@@ -318,6 +325,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            android:contentDescription="@null"
             android:src="@drawable/banner_ribbon_lose"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

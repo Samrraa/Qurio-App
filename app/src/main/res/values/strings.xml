@@ -31,4 +31,6 @@
     <string name="you_lose">You Lose</string>
     <string name="game">Game</string>
     <string name="loading_game">Loading Game</string>
+    <string name="coins_stack_icon">Coins stack icon</string>
+    <string name="you_got_a_star">You got a star!</string>
 </resources>
