@@ -866,5 +866,42 @@
       "deletions": 0,
       "changed_files": 5
     }
+  },
+  {
+    "pr_number": 46,
+    "url": "https://github.com/Samrraa/QurioApp/pull/46",
+    "title": "feat: Add no connection screen",
+    "opened_at": "2025-10-04T00:00:16Z",
+    "head_ref": "feature/33-add-no-connection-state-component",
+    "base_ref": "develop",
+    "creator": {
+      "login": "fatmahgazy",
+      "id": 143911324,
+      "url": "https://github.com/fatmahgazy"
+    },
+    "assignees": [
+      {
+        "login": "fatmahgazy",
+        "id": 143911324,
+        "url": "https://github.com/fatmahgazy"
+      }
+    ],
+    "comments": [],
+    "approvals": [],
+    "required_approvals": 2,
+    "first_approved_at": null,
+    "time_to_first_approval_minutes": null,
+    "required_approvals_met_at": null,
+    "time_to_required_approvals_minutes": null,
+    "closed_at": null,
+    "merged_at": null,
+    "merged_by": null,
+    "week": "2025-W40",
+    "status": "pending",
+    "diff_stats": {
+      "additions": 55,
+      "deletions": 0,
+      "changed_files": 3
+    }
   }
 ]
