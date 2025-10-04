@@ -33,7 +33,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="6dp"
         android:contentDescription="@string/coins_icon"
-        android:src="@drawable/coin_stack"
+        android:src="@drawable/ic_coin_stack"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintBottom_toBottomOf="@+id/characterImage"
         app:layout_constraintEnd_toStartOf="@+id/characterPrice"
