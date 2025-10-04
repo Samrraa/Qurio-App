@@ -839,7 +839,18 @@
         "url": "https://github.com/fatmahgazy"
       }
     ],
-    "comments": [],
+    "comments": [
+      {
+        "author": {
+          "login": "mohannadahmed00",
+          "id": 43306572,
+          "url": "https://github.com/mohannadahmed00"
+        },
+        "first_comment_at": "2025-10-04T03:25:00Z",
+        "last_comment_at": "2025-10-04T03:25:00Z",
+        "count": 1
+      }
+    ],
     "approvals": [
       {
         "reviewer": {
